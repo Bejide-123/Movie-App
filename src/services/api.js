@@ -4,7 +4,8 @@ const BASE_URL = "https://api.themoviedb.org/3";
 export const fetchMovies = async (query) => {
       const endpoint = "/search/movie";
     try {
-        const response = await fetch(`${BASE_URL}${endpoint}?api_key=${API_KEY}&query=${encodeURIcomponent()}&language=en-US`);
+        const response = await fetch(`${BASE_URL}${endpoint}?api_key=${API_KEY}&query=${encodeURIComponent(query)}&language=en-US`);
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }

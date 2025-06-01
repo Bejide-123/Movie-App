@@ -1,4 +1,5 @@
 import '../css/MovieCard.css'
+import Favourites from '../pages/Favourites'
 
 const MovieCard = ({movie}) => {
 
