@@ -46,6 +46,17 @@
   }
 }
 
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  height: auto; /* Changed from fixed 500px to auto to allow flexible height */
+  overflow-y: visible; /* Changed from auto to visible to avoid scroll issues */
+  box-sizing: border-box;
+}
+
 .movies-grid > * {
   animation: fadeIn 0.3s ease-out forwards;
 }
